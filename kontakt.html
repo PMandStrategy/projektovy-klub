@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Projektový klub</title>
+  <meta name="description" content="Kontaktní údaje Projektového klubu. Odběr emailových pozvánek na setkání.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Projektový klub</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="praha.html">Praha</a></li>
+          <li><a href="ostrava.html">Ostrava</a></li>
+          <li><a href="online.html">Online</a></li>
+          <li><a href="o-nas.html">O nás</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <h1>Kontakt</h1>
+  </section>
+
+  <main class="content">
+
+    <h2>Kontaktní údaje</h2>
+
+    <div class="card">
+      <div class="contact-grid">
+        <span class="contact-label">Kontaktní osoba</span>
+        <span><a href="http://www.skolenipm.cz/" target="_blank" rel="noopener">Mira Vlach</a></span>
+
+        <span class="contact-label">E-mail</span>
+        <span><a href="mailto:podpora@projektovyklub.cz">podpora@projektovyklub.cz</a></span>
+
+        <span class="contact-label">Telefon</span>
+        <span><a href="tel:+420774182840">+420 774 182 840</a></span>
+
+        <span class="contact-label">Web</span>
+        <span><a href="https://www.projektovyklub.cz" target="_blank" rel="noopener">www.projektovyklub.cz</a></span>
+      </div>
+    </div>
+
+    <!-- Odběr pozvánek -->
+    <h2>Odběr emailových pozvánek</h2>
+
+    <p>Pokud chcete dostávat pozvánky na budoucí setkání, využijte prosím formulář níže. <a href="https://docs.google.com/document/d/1GPNy4386yZ_0MS69yGr_9smS4S6Z56MGbb0OvNmY8_Q/edit?usp=sharing" target="_blank" rel="noopener">Zásady GDPR</a></p>
+
+    <!-- SmartEmailing formulář -->
+    <div class="form-wrapper">
+      <form
+        method="post"
+        id="se-webform-1"
+        class="se-webform-1 se-webform"
+        action="https://app.smartemailing.cz/public/web-forms-v2/display-form/676293-pz82grjhw5m6copas0gkx02xqtptvxxocfm0b859zkbeqabinp8morokcibjm8idnpuqn9nham2w5znbnmkomrtr8qu48ud4qznc"
+      >
+        <div class="se-webform-inner">
+          <div class="se-body">
+            <ul>
+              <li>
+                <label for="frm-webFormHtmlRenderer-webFormForm-fields-df_name" class="se-label se-required">Jméno</label>
+                <input type="text" name="fields[df_name]" id="frm-webFormHtmlRenderer-webFormForm-fields-df_name" required data-nette-rules='[{"op":":filled","msg":"Jméno je povinné pole"}]'>
+              </li>
+              <li>
+                <label for="frm-webFormHtmlRenderer-webFormForm-fields-df_surname" class="se-label se-required">Příjmení</label>
+                <input type="text" name="fields[df_surname]" id="frm-webFormHtmlRenderer-webFormForm-fields-df_surname" required data-nette-rules='[{"op":":filled","msg":"Příjmení je povinné pole"}]'>
+              </li>
+              <li>
+                <label for="frm-webFormHtmlRenderer-webFormForm-fields-df_emailaddress" class="se-label se-required">E-mailová adresa</label>
+                <input type="email" name="fields[df_emailaddress]" data-emailaddress="1" id="frm-webFormHtmlRenderer-webFormForm-fields-df_emailaddress" required data-nette-rules='[{"op":":filled","msg":"E-mailová adresa je povinné pole."},{"op":":email","msg":"E-mailová adresa je povinné pole."}]'>
+              </li>
+              <li>
+                <label class="se-label se-required">Chci dostávat pozvánky na následující akce:</label>
+                <label for="frm-webFormHtmlRenderer-webFormForm-fields-cf_1-1" class="se-checkbox">
+                  <input type="checkbox" name="fields[cf_1][]" id="frm-webFormHtmlRenderer-webFormForm-fields-cf_1-1" value="1">
+                  Živé akce v Praze
+                </label>
+                <label for="frm-webFormHtmlRenderer-webFormForm-fields-cf_1-4" class="se-checkbox">
+                  <input type="checkbox" name="fields[cf_1][]" id="frm-webFormHtmlRenderer-webFormForm-fields-cf_1-4" value="4">
+                  Živé akce v Ostravě
+                </label>
+                <label for="frm-webFormHtmlRenderer-webFormForm-fields-cf_1-7" class="se-checkbox">
+                  <input type="checkbox" name="fields[cf_1][]" id="frm-webFormHtmlRenderer-webFormForm-fields-cf_1-7" value="7">
+                  Online akce
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="se-submit">
+            <button type="submit" name="_submit" value="Odebírat">Odebírat</button>
+          </div>
+        </div>
+        <input type="hidden" name="referrer" id="se-ref-field-id" value="">
+        <input type="hidden" name="sessionid" id="se-sessionid-field" value="">
+        <input type="hidden" name="sessionUid" id="se-sessionUid-field" value="">
+        <input type="hidden" name="_do" value="webFormHtmlRenderer-webFormForm-submit">
+      </form>
+    </div>
+
+    <!-- SmartEmailing JS pro validaci a autocomplete emailu -->
+    <script>
+      var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+        return new (P || (P = Promise))(function (resolve, reject) {
+          function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+          function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+          function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+          step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+      };
+
+      // Referrer tracking
+      (function() {
+        var refField = document.getElementById('se-ref-field-id');
+        if (refField) refField.value = document.referrer || '';
+      })();
+    </script>
+
+    <p>Výměna zkušeností u nás je pro nás hodně i o vztazích a lidech. Ceníme si proto toho, že jste ochotni uvést v rámci odběru pozvánek <strong>i své jméno</strong>. Nejen, že se na setkáních dozvíte užitečné novinky, ale mezi účastníky poznáte především i zajímavé lidi.</p>
+
+    <!-- LinkedIn -->
+    <h2>Sledujte Projektový klub na LinkedIn</h2>
+    <p><a href="https://www.linkedin.com/company/projektovy-klub/" target="_blank" rel="noopener">linkedin.com/company/projektovy-klub</a></p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2010–2026 Projektový klub · Organizátor: Ing. Miroslav Vlach, IČ: 73849847</p>
+      <p><a href="https://www.linkedin.com/company/projektovy-klub/" target="_blank" rel="noopener">LinkedIn</a> · <a href="kontakt.html">Kontakt</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
