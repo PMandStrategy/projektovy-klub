@@ -310,6 +310,16 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0;
 }
 
+/* --- Event Date Label --- */
+.event-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+
 /* --- Highlight Box --- */
 .highlight-box {
   background: var(--color-surface);
