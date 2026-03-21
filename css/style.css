@@ -96,8 +96,17 @@ img { max-width: 100%; height: auto; display: block; }
   height: 2px;
   background: var(--color-white);
   margin: 5px 0;
-  transition: var(--transition);
   border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .main-nav ul {
@@ -514,7 +523,10 @@ img { max-width: 100%; height: auto; display: block; }
   .nav-toggle { display: block; }
 
   .main-nav {
-    display: none;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
     position: absolute;
     top: 100%;
     left: 0;
@@ -522,7 +534,7 @@ img { max-width: 100%; height: auto; display: block; }
     background: var(--color-primary);
     box-shadow: var(--shadow-lg);
   }
-  .main-nav.open { display: block; }
+  .main-nav.open { max-height: 400px; }
 
   .main-nav ul {
     flex-direction: column;
