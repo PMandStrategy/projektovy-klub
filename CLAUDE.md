@@ -48,6 +48,8 @@ Na stránce online.html je embed **FAPI** formulář pro placenou registraci na 
 - **ID formuláře se mění s každou novou akcí** — při vypisování nového webináře je potřeba od organizátora získat nové FAPI ID a aktualizovat `src` URL ve scriptu
 - Formulář není potřeba stylovat — FAPI si renderuje vlastní UI
 
+⚠️ **FAPI `<script>` nesmí být obalený v žádném `<div>`** — musí být přímo v toku HTML. Pokud je obalený, FAPI nedokáže detekovat svou vlastní URL a formulář se nenačte.
+
 ### Design systém (css/style.css)
 
 - **Fonty:** Plus Jakarta Sans (body) + DM Serif Display (nadpisy) z Google Fonts
