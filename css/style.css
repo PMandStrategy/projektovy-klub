@@ -74,11 +74,13 @@ img { max-width: 100%; height: auto; display: block; }
 
 .site-logo {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
   padding: 0.75rem 0;
   display: flex;
   align-items: center;
 }
-.site-logo img { height: 32px; width: auto; }
 .site-logo:hover { text-decoration: none; }
 
 /* Hamburger */
