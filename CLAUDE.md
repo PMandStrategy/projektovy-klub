@@ -4,7 +4,9 @@
 
 Statický web pro **Projektový klub** (projektovyklub.cz) — nezávislou diskuzní platformu o řízení projektů, kterou od roku 2010 organizuje Mira Vlach.
 
-Web je hostovaný na **GitHub Pages**. Žádný build krok, žádný framework — čisté HTML + CSS.
+Web je hostovaný na **GitHub Pages** s vlastní doménou **https://projektovyklub.cz**. Žádný build krok, žádný framework — čisté HTML + CSS.
+
+Soubor `CNAME` v kořenu repozitáře obsahuje doménu `projektovyklub.cz`. Nesmí se mazat — GitHub Pages ho potřebuje pro nasměrování vlastní domény.
 
 ## Struktura
 
