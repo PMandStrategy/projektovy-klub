@@ -72,7 +72,7 @@ Web je primárně **černobílý** — bílé pozadí, tmavý text. Barvy z loga
 ### Navigace
 
 - Sticky header, bílé pozadí, spodní border
-- Logo jako `<img>` tag (`img/logo-basic-PK-min.png`, height="32")
+- Logo jako textový odkaz `<a class="site-logo">Projektový klub</a>` (font-weight 600, font-size 0.95rem, barva --ink)
 - Aktivní odkaz: barva --ink, spodní border 2px --teal
 - Neaktivní: barva --ink-soft, hover → --ink + background --surface
 - Mobilní hamburger: animace z `js/main.js`, plynulé rozbalení přes max-height
@@ -121,6 +121,10 @@ Vždy zahrnout:
 3. Aktualizovat sekci „Příští setkání" na `index.html`
 
 ⚠️ CC by měl **VŽDY** připomenout/zkontrolovat, zda byl záznam přidán do `o-nas.html`.
+
+### 5. Archivace stránek Praha / Ostrava
+
+Když je akce na stránce `praha.html` nebo `ostrava.html` archivována a není vypsáno nové téma, nahraď detailní popis akce **přehledem proběhlých setkání** na daném místě (bez číslování, jen název + datum + hosté). Seznam vyfiltruj z `o-nas.html` podle lokace. Při vypisování nové akce tento přehled nahraď detailem nové akce.
 
 ## Důležité technické detaily
 

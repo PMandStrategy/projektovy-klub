@@ -469,6 +469,43 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .cta-signature strong { color: var(--white); }
 
+/* --- Stats Row (homepage) --- */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.5rem 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 480px) {
+  .stats-row { gap: 1.5rem; }
+  .stat-number { font-size: 1.5rem; }
+}
+
 /* --- Benefits Grid (homepage) --- */
 .benefits-grid {
   display: grid;
