@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online webináře — Projektový klub</title>
   <meta name="description" content="Online webináře Projektového klubu. Nejbližší webinář: 25. 3. 2026 — Jak uřídit komplexní implementace.">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="site-logo">Projektový klub</a>
+      <a href="index.html" class="site-logo"><img src="img/logo-basic-PK-min.png" alt="Projektový klub" height="32"></a>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -28,72 +29,105 @@
     </div>
   </header>
 
-  <section class="hero hero-small">
-    <h1>Online webináře</h1>
-  </section>
+  <div class="page-header">
+    <hr class="accent-line">
+    <p class="eyebrow">Příští setkání</p>
+    <h1>Jak uřídit komplexní implementace</h1>
+    <p class="lede">Diskuze o dobré praxi při řízení komplexních implementací softwaru z pohledu zadavatele — jak postavit tým, nastavit spolupráci a zvládnout change management.</p>
+    <div class="chips">
+      <span class="chip chip-dark">Online</span>
+      <span class="chip chip-outline">st 25. března 2026 · 13:00</span>
+      <span class="chip chip-teal">400 Kč</span>
+    </div>
+  </div>
 
   <main class="content">
 
-    <p class="event-date">Nejbližší online webinář: 25. 3. 2026</p>
-    <h2>Jak uřídit komplexní implementace</h2>
-
-    <div class="card">
-      <p>Chystáte se u vás ve firmě / organizaci na komplexní implementaci softwaru (např. ERP) a chcete, aby měl tento projekt co nejhladší průběh a přinesl žádané výsledky?</p>
-
-      <p>Na této speciálce budeme s lidmi z oboru diskutovat o dobré praxi a na co si dát pozor z pohledu zadavatele při řízení projektu. A také jak řešit komplexní změnu na úrovni celé organizace a jejich zaměstnanců (change management).</p>
-
-      <p>Řešit budeme např. jak obsazovat projektové role v týmu, co od které role očekávat a jaké kompetence jsou při tom třeba. Také jak si nastavit spolupráci byznysu, IT a dodavatele.</p>
-
-      <p>Zjistíte, proč některé změny selhávají a jak díky praktickému přístupu k řízení lidské stránky usnadníte dosažení skutečných a udržitelných výsledků.</p>
-
-      <h3>Program</h3>
-      <ul>
-        <li><strong>Proč implementační projekty selhávají a jak tomu předejít</strong> (prezentace) — Petr Prokop, ředitel implementace ve společnosti ITeuro, a.s.</li>
-        <li><strong>Lidé ve firmě a práce se změnou</strong> (prezentace) — Barbora Lubojacká, Director of Advisory v Symphera</li>
-        <li>Moderovaná diskuze, otázky účastníků</li>
-      </ul>
-
-      <h3>Diskutovaná témata</h3>
-      <ul>
-        <li>Definice očekávání v projektu</li>
-        <li>Jak postavit správně tým</li>
-        <li>Práce s rezervami na projektu</li>
-        <li>Jak změnu vnímají lidi a jak se s ní seznamují</li>
-        <li>Motivace být součástí změny</li>
-        <li>Změny ve způsobu fungování</li>
-      </ul>
+    <p class="section-label">Řečníci</p>
+    <div class="speakers-grid">
+      <div class="speaker-card">
+        <div class="speaker-name">Petr Prokop</div>
+        <div class="speaker-role">Ředitel implementace, ITeuro, a.s.</div>
+        <div class="speaker-talk">Proč implementační projekty selhávají a jak tomu předejít</div>
+      </div>
+      <div class="speaker-card purple">
+        <div class="speaker-name">Barbora Lubojacká</div>
+        <div class="speaker-role">Director of Advisory, Symphera</div>
+        <div class="speaker-talk">Lidé ve firmě a práce se změnou</div>
+      </div>
     </div>
 
-    <h3>Praktické informace</h3>
-    <div class="highlight-box">
-      <p><strong>Kdy:</strong> středa 25. 3. 2026, 13:00–15:00 (dle délky diskuze)<br>
-      <strong>Kde:</strong> online (odkaz na připojení obdržíte po zaplacení)<br>
-      <strong>Kapacita:</strong> max. 25 účastníků<br>
-      <strong>Vstupné:</strong> 400 Kč / osoba<br>
-      <strong>Požadavek:</strong> zapnutá kamera po většinu setkání a aktivní přítomnost v diskuzi</p>
-      <p>Tento online webinář cílí hlavně na odpovídající role ve firmách (CEO, CIO atp.), ale jde o otevřenou akci Projektového klubu, nezávisle na roli.</p>
+    <p class="section-label">Program</p>
+    <ul class="program-list">
+      <li><strong>Proč implementační projekty selhávají a jak tomu předejít</strong> — Petr Prokop</li>
+      <li class="purple"><strong>Lidé ve firmě a práce se změnou</strong> — Barbora Lubojacká</li>
+      <li class="gray">Moderovaná diskuze, otázky účastníků</li>
+    </ul>
+
+    <p class="section-label">Témata</p>
+    <div class="topic-tags">
+      <span class="topic-tag">Definice očekávání v projektu</span>
+      <span class="topic-tag">Jak postavit správně tým</span>
+      <span class="topic-tag">Práce s rezervami na projektu</span>
+      <span class="topic-tag">Jak změnu vnímají lidi</span>
+      <span class="topic-tag">Motivace být součástí změny</span>
+      <span class="topic-tag">Změny ve způsobu fungování</span>
     </div>
 
-    <h3>Medailonek: Petr Prokop</h3>
-    <p>Petr Prokop je ředitel implementace ve společnosti <a href="http://www.iteuro.cz/" target="_blank" rel="noopener">ITeuro, a.s.</a>, a vede tým, který zajišťuje úspěšné zavádění ERP systémů Infor SyteLine a Infor LN do výrobních firem. Dohlíží také na vývoj MES systému InduStream. Řízení ERP projektů se věnuje více než 10 let.</p>
+    <p class="section-label">Praktické informace</p>
+    <div class="info-table">
+      <div class="info-row">
+        <span class="info-label">Kdy</span>
+        <span class="info-value">středa 25. 3. 2026, 13:00–15:00</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Kde</span>
+        <span class="info-value">online (odkaz obdržíte po zaplacení)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Kapacita</span>
+        <span class="info-value">max. 25 účastníků</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Vstupné</span>
+        <span class="info-value">400 Kč / osoba</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Požadavek</span>
+        <span class="info-value">zapnutá kamera a aktivní přítomnost v diskuzi</span>
+      </div>
+    </div>
+    <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--ink-soft);">Tento online webinář cílí hlavně na odpovídající role ve firmách (CEO, CIO atp.), ale jde o otevřenou akci Projektového klubu, nezávisle na roli.</p>
 
-    <h3>Medailonek: Barbora Lubojacká</h3>
-    <p><a href="https://www.linkedin.com/in/barbora-lubojack%C3%A1-4235a0a/" target="_blank" rel="noopener">Barbora Lubojacká</a> (Director of Advisory v <a href="https://www.symphera.cz/" target="_blank" rel="noopener">Symphera</a>) je zkušený leader v oblasti digitální transformace. Specializuje se na transformační projekty, change management a řízení projektů. S více než dvacetiletými zkušenostmi úspěšně vedla projekty s významným dopadem, včetně implementací ERP systémů (SAP, Salesforce). Je také jednou z hlavních organizátorek <a href="https://transformationsummit.eu/" target="_blank" rel="noopener">Transformation Summitu</a>.</p>
+    <p class="section-label">Medailonky</p>
+    <div class="bio">
+      <div class="bio-name">Petr Prokop</div>
+      <p>Petr Prokop je ředitel implementace ve společnosti <a href="http://www.iteuro.cz/" target="_blank" rel="noopener">ITeuro, a.s.</a>, a vede tým, který zajišťuje úspěšné zavádění ERP systémů Infor SyteLine a Infor LN do výrobních firem. Dohlíží také na vývoj MES systému InduStream. Řízení ERP projektů se věnuje více než 10 let.</p>
+    </div>
+    <div class="bio">
+      <div class="bio-name purple">Barbora Lubojacká</div>
+      <p><a href="https://www.linkedin.com/in/barbora-lubojack%C3%A1-4235a0a/" target="_blank" rel="noopener">Barbora Lubojacká</a> (Director of Advisory v <a href="https://www.symphera.cz/" target="_blank" rel="noopener">Symphera</a>) je zkušený leader v oblasti digitální transformace. Specializuje se na transformační projekty, change management a řízení projektů. S více než dvacetiletými zkušenostmi úspěšně vedla projekty s významným dopadem, včetně implementací ERP systémů (SAP, Salesforce). Je také jednou z hlavních organizátorek <a href="https://transformationsummit.eu/" target="_blank" rel="noopener">Transformation Summitu</a>.</p>
+    </div>
 
-    <h3>Chcete se přihlásit? Vyplňte registrační formulář</h3>
-    <p>Platba je možná převodem nebo kartou.</p>
+    <p class="section-label">Registrace</p>
+    <div class="cta-block">
+      <h3>Přihlaste se na setkání</h3>
+      <p>Platba je možná převodem nebo kartou. Po úhradě obdržíte automaticky email s potvrzením účasti a instrukce k připojení.</p>
+    </div>
 
     <!-- FAPI registrační/platební formulář -->
     <script type="text/javascript" src="https://form.fapi.cz/script.php?id=4619387c-121b-4730-b55f-bc7c3ff9aa24"></script>
 
-    <p>Po úhradě a připsání platby obdržíte automaticky email s potvrzením vaší účasti a následně i instrukce k připojení.</p>
-    <p>Těším se na inspirativní setkání a věřím, že si společně všichni odneseme spoustu praktických tipů!<br><br><strong>Mira Vlach</strong><br>organizátor Projektového klubu<br>📞 774 182 840</p>
+    <div class="cta-signature" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--ink-soft);">
+      <p>Těším se na inspirativní setkání a věřím, že si společně všichni odneseme spoustu praktických tipů!</p>
+      <p><strong style="color: var(--ink);">Mira Vlach</strong><br>organizátor Projektového klubu · 774 182 840</p>
+    </div>
 
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2010–2026 Projektový klub · Organizátor: Ing. Miroslav Vlach, IČ: 73849847</p>
+      <p>&copy; 2010–2026 Projektový klub · Organizátor: Ing. Miroslav Vlach, IČ: 73849847</p>
       <p><a href="https://www.linkedin.com/company/projektovy-klub/" target="_blank" rel="noopener">LinkedIn</a> · <a href="kontakt.html">Kontakt</a></p>
     </div>
   </footer>
