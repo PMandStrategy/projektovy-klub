@@ -119,8 +119,9 @@ Vždy zahrnout:
 1. Aktualizovat stránku akce (přepsat na novou, nebo zobrazit `.no-event` s „aktuálně není vypsáno žádné téma")
 2. Přidat záznam o proběhlé akci do `o-nas.html` (číslo +1, na začátek seznamu `<ol>`)
 3. Aktualizovat sekci „Příští setkání" na `index.html`
+4. Aktualizovat počet proběhlých setkání ve `.stats-row` na `index.html` (`.stat-number`) tak, aby odpovídal novému číslu v `o-nas.html`
 
-⚠️ CC by měl **VŽDY** připomenout/zkontrolovat, zda byl záznam přidán do `o-nas.html`.
+⚠️ CC by měl **VŽDY** připomenout/zkontrolovat, zda byl záznam přidán do `o-nas.html` a zda souhlasí počet setkání na úvodní straně.
 
 ### 5. Archivace stránek Praha / Ostrava
 
