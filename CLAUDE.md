@@ -85,6 +85,10 @@ Web je primárně **černobílý** — bílé pozadí, tmavý text. Barvy z loga
 3. `<h1>` (velký serifový nadpis)
 4. Volitelně `.lede` odstavec a `.chips` (badge/chipy)
 
+### Homepage hero sekce (index.html)
+
+Homepage má dynamickou hero sekci — když je vypsané aktivní setkání, zobraz jej jako první výrazný blok (eyebrow „Příští setkání", h1 s názvem akce jako odkaz, chipy, CTA „Detail a registrace →"). Pod tím následuje oddělovač a obecný popis klubu (eyebrow „O Projektovém klubu", h2, CTA „Přihlásit odběr pozvánek"). Pokud není vypsané žádné setkání, hero sekce zobrazuje obecný popis klubu jako první (bez event bloku).
+
 ## Konvence pro stránky akcí (online.html, praha.html, ostrava.html)
 
 Při vypisování nové akce se obsah stránky aktualizuje podle následujících pravidel:
