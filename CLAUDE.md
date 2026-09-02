@@ -77,6 +77,16 @@ Web je primárně **černobílý** — bílé pozadí, tmavý text. Barvy z loga
 - Neaktivní: barva --ink-soft, hover → --ink + background --surface
 - Mobilní hamburger: animace z `js/main.js`, plynulé rozbalení přes max-height
 
+### Pretty URL (odkazy bez .html)
+
+GitHub Pages servíruje stránky i **bez přípony** — `/online` funguje stejně jako `/online.html` (200 OK). Proto:
+
+- **Všechny interní odkazy píšeme bez `.html`:** `href="online"`, `href="praha"`, `href="o-nas"` atd. Úvod/logo směřuje na kořen: `href="/"`.
+- Fyzické soubory zůstávají `online.html`, `praha.html` … (nepřejmenováváme, netvoříme složky). Pozor: varianta s lomítkem `/online/` **nefunguje** (404) — nikdy ji nepoužívej.
+- **`og:url` i `<link rel="canonical">`** na každé stránce ukazují na pretty URL (`https://projektovyklub.cz/online`), aby se `/online` a `/online.html` nebraly jako duplicita. Home = `https://projektovyklub.cz/`.
+- Odkazy na assety (`css/…`, `js/…`, `img/…`) příponu **ponechávají** — pretty URL se týká jen stránek.
+- Při zakládání nové stránky drž stejný vzor: nový soubor `xxx.html`, ale odkazuj na něj jako `href="xxx"` a nastav mu `og:url` + `canonical` na `.../xxx`.
+
 ### Stránky bez hero bannerů
 
 Žádné hero bannery. Místo toho:
