@@ -218,3 +218,19 @@ Vše v jednom souboru `css/style.css`. Barvy, fonty a rozměry měnit přes CSS 
 ## Jazyk
 
 Web je celý v **češtině**. Veškerý obsah i commity pište česky.
+
+## Commit messages
+
+Repozitář je **veřejný** — commit messages čtou i cizí lidé. Proto:
+
+- **Stručně a věcně.** Jeden řádek předmětu, max. 1–3 krátké odrážky v těle jen tam, kde to skutečně pomáhá orientaci. Žádné detailní výčty sekcí, hostů, cen, kapacit ani rozpis každé změněné položky.
+- **Bez interního kontextu.** Nepsat věci jako „ponecháno, bude nahrazeno novým tématem", „uživatel schválil", „podle zadání", odkazy na jiné stroje/session apod.
+- **Bez obchodních detailů** (ceny, kapacity, jména hostů, interní důvody), pokud nejsou nezbytné pro pochopení změny.
+- **Výjimka:** delší popis jen u netriviálních technických změn, kde by stručný předmět nestačil (např. změna hostingu, přestavba struktury, oprava netriviálního bugu).
+
+Příklady:
+
+- ✅ `Vypsání online setkání 9. 9. 2026`
+- ✅ `Archivace setkání #110 a aktualizace počitadla`
+- ✅ `Pretty URL — interní odkazy bez .html, doplněn canonical`
+- ❌ `Vypsání akce: … — online.html: nahrazena červnová akce zářijovou — host …, formát …; sekce Host (1 karta), Program (…), Praktické info (9. 9. 17:00–19:00, do 30 účastníků, 250 Kč, bez záznamu) …`
